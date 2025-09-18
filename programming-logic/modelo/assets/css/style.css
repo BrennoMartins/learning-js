@@ -26,6 +26,23 @@ body {
   border-radius: 10px;
 }
 
+.container.columns {
+  display: flex;
+  flex-direction: row; /* garante que as colunas fiquem lado a lado */
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+}
+
+.coluna {
+  flex: 1; /* cada coluna ocupa metade do espaço */
+  min-width: 200px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
 form input, form label, form button {
   display: block;
   width: 100%;
